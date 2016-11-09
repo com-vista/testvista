@@ -1,0 +1,476 @@
+html
+{
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, KoburinaGo-W3-83pv-RKSJ-H, 'こぶりなゴシック W3', KoburinaGoStd-W3, 'こぶりなゴシック Std W3', Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+
+    margin: auto;
+
+    word-wrap: break-word;
+
+    color: #333;
+    background: #fff;
+}
+
+::selection
+{
+    background: #dce3a0;
+}
+
+::-moz-selection
+{
+    background: #dce3a0;
+}
+
+a
+{
+    -webkit-transition: color .2s ease-out;
+       -moz-transition: color .2s ease-out;
+            transition: color .2s ease-out;
+
+    color: #496b8a;
+    outline: none;
+}
+
+a:link
+{
+    text-decoration: none;
+
+    outline: none;
+}
+
+a:visited
+{
+    text-decoration: none;
+
+    outline: none;
+}
+
+a:hover
+{
+    /*color: #d3ff17;*/
+	color:#000;
+    outline: none;
+}
+
+a:active
+{
+    text-decoration: none;
+
+    outline: none;
+}
+
+.inherit
+{
+    color: inherit;
+}
+
+.hover-dark:hover
+{
+    color: #000;
+}
+
+.nowrap
+{
+    white-space: nowrap;
+}
+/*__________________________________________*/
+.l-common p:last-child
+{
+    margin-bottom: 0;
+}
+.container
+{
+    position: relative;
+
+    width: 960px;
+    margin: auto;
+
+    *zoom: 1;
+}
+.container:before, .container:after
+{
+    display: table;
+
+    content: '';
+}
+.container:after
+{
+    clear: both;
+}
+.column
+{
+    float: left;
+}
+.overlay-text
+{
+    position: relative;
+
+    display: block;
+}
+.overlay-text > p
+{
+    font-size: 18px;
+    line-height: 1.5555555556;
+
+    position: absolute;
+    z-index: 1;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 15px 18px;
+
+    -webkit-transition: opacity .3s ease-out;
+       -moz-transition: opacity .3s ease-out;
+            transition: opacity .3s ease-out;
+
+    opacity: 0;
+    background: rgba(211, 255, 23, .9);
+}
+.index-works-list {
+	float:left;
+	/*margin:0 0 0 14px;*/
+}
+	.index-works-list li {
+		margin-bottom:13px;
+		width:311px;
+	}
+
+/*マウスオーバー*/
+figure {
+	position: relative;
+	overflow: hidden;
+}
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,51,.7);
+	-webkit-transition: .3s;
+	transition: .3s;
+	opacity: 0;
+}
+figcaption h3,
+figcaption p {
+	position: absolute;
+	left: -100%;
+	width: 260px;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+figcaption h3 {
+	top: 30px;
+	font-size:182%;
+}
+figcaption p {
+	top: 90px;
+}
+figure:hover figcaption {
+	opacity: 1;
+}
+figure:hover figcaption h3,
+figure:hover figcaption p {
+	left: 20px;
+}
+figure:hover figcaption h3 {
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
+}
+figure:hover figcaption p {
+	-webkit-transition-delay: .5s;
+	transition-delay: .5s;
+}
+
+
+/*安心安全への取り組み*/
+#index-safety {
+	position:relative;
+	width:960px;
+	margin:0 auto;
+	}
+/*_______タイトル*/
+#index-safety h2 {
+	font-size:0;
+}
+#index-safety #safetit01 {
+	position:absolute;
+	top:80px;
+	left:220px;
+	}
+#index-safety #safetit02 {
+	position:absolute;
+	top:236px;
+	left:634px;
+	}
+#index-safety #safetit03 {
+	position:absolute;
+	top:390px;
+	left:100px;
+	}
+/*__________画像*/
+#index-safety #safe01 {
+	position:absolute;
+	top:98px;
+	left:30px;
+	}
+#index-safety #safe02 {
+	position:absolute;
+	top:360px;
+	left:268px;
+	}
+#index-safety #safe03 {
+	position:absolute;
+	top:355px;
+	left:660px;
+	}
+#index-safety #safe04 {
+	position:absolute;
+	top:0;
+	right:0;
+	}
+/*SVGアニメーション*/
+#MV {
+	position:relative;
+}
+.box{
+    /*width: 901px;*/
+    height: 95x;
+	position:absolute;
+	top:100px;
+	z-index:9999;
+	/*background:#FF0;*/
+	width:100%;
+	text-align:center;
+}
+path{    
+stroke:#000;
+fill:none;
+stroke-width:1;
+stroke-dasharray: 3000;
+stroke-dashoffset:3000;
+animation: DASH 10s ease-in alternate forwards;
+-webkit-animation:DASH 10s ease-in 0s forwards;
+-o-animation:DASH 10s ease-in 0s forwards;
+animation:DASH 10s ease-in 0s forwards;
+}
+@keyframes DASH{
+0%{stroke-dashoffset:3000;fill:#FFF;}
+100%{stroke-dashoffset:0;;fill:#000;}
+}
+@-moz-keyframes DASH{
+0%{stroke-dashoffset:3000;fill:#FFF;}
+100%{stroke-dashoffset:0;;fill:#000;}
+}
+@-webkit-keyframes DASH{
+0%{stroke-dashoffset:3000;fill:#FFF;}
+100%{stroke-dashoffset:0;;fill:#000;}
+}
+@-o-keyframes DASH{
+0%{stroke-dashoffset:3000;fill:#FFF;}
+100%{stroke-dashoffset:0;;fill:#000;}
+}
+@-ms-keyframes DASH{
+0%{stroke-dashoffset:3000;fill:#FFF;}
+100%{stroke-dashoffset:0;fill:#000;}
+}
+
+/*文字_下→上*/
+#animation {
+	visibility:hidden;
+	position:absolute;
+	top:280px;
+	width:100%;
+	z-index:9998;
+}
+.fadeInUp {
+	 -webkit-animation-fill-mode:both;
+	 -ms-animation-fill-mode:both;
+	 animation-fill-mode:both;
+	 -webkit-animation-duration:3s;
+	 -ms-animation-duration:3s;
+	 animation-duration:3s;
+	 -webkit-animation-name: fadeInUp;
+	 animation-name: fadeInUp;
+	 visibility: visible !important;
+}
+@-webkit-keyframes fadeInUp {
+	 0% { opacity: 0; -webkit-transform: translateY(50px); }
+	 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInUp {
+	 0% { opacity: 0; -webkit-transform: translateY(50px); -ms-transform: translateY(50px); transform: translateY(50px); }
+	 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+/*SVGアニメーション_60th*/
+#svg_60th.active path{    
+	stroke:#000;
+	fill:none;
+	stroke-width:1;
+	stroke-dasharray: 3000;
+	stroke-dashoffset:3000;
+	animation: GOGO 6s ease-in alternate forwards;
+	-webkit-animation:GOGO 6s ease-in 0s forwards;
+	-o-animation:GOGO 6s ease-in 0s forwards;	
+	animation:GOGO 6s ease-in 0s forwards;
+}
+@keyframes GOGO{
+0%{stroke-dashoffset:3000;fill:#FFF;}
+100%{stroke-dashoffset:0;fill:#FFF;}
+}
+@-moz-keyframes GOGO{
+0%{stroke-dashoffset:3000;fill:#FFF;}
+100%{stroke-dashoffset:0;fill:#FFF;}
+}
+@-webkit-keyframes GOGO{
+0%{stroke-dashoffset:3000;fill:#FFF;}
+100%{stroke-dashoffset:0;fill:#FFF;}
+}
+@-o-keyframes GOGO{
+0%{stroke-dashoffset:3000;fill:#FFF;}
+100%{stroke-dashoffset:0;fill:#FFF;}
+}
+@-ms-keyframes GOGO {
+0%{stroke-dashoffset:3000;fill:#FFF;}
+100%{stroke-dashoffset:0;fill:#FFF;}
+}
+
+#svg_60th {
+	width: 960px;
+    height: 220px;
+    text-align: center;
+    position: relative;
+    padding: 30px 0 0 0;
+	margin:0 auto 30px auto;
+	}
+
+#svg_60th div {
+    background: #999999;
+     position:absolute;
+     -webkit-transition:all 2s ease-in-out;
+     transition:all 2s ease-in-out;
+    }
+#svg_60th div.bdT{
+    width: 100%;
+    height:3px;
+    top:0;
+    left:0;
+}
+#svg_60th div.bdB{
+    width: 100%;
+    height:3px;
+    bottom:0;
+    right:0;
+}
+#svg_60th div.bdR{
+    height:100%;
+    width :3px;
+    right:0;
+    top:0;
+}
+#svg_60th div.bdL{
+    height:100%;
+    width :3px;
+    left:0;
+    bottom:0;
+}
+
+/*線のアニメーション*/
+#svg_60th.active div.bdT{
+    width: 100%;
+    height:3px;
+    top:0;
+    left:0;
+}
+#svg_60th.active div.bdB{
+    width: 100%;
+    height:3px;
+    bottom:0;
+    right:0;
+}
+#svg_60th.active div.bdR{
+    height:100%;
+    width :3px;
+    right:0;
+    top:0;
+}
+#svg_60th.active div.bdL{
+    height:100%;
+    width :3px;
+    left:0;
+    bottom:0;
+}
+#svg_60th div.bdT{
+    width: 0;
+}
+#svg_60th div.bdB{
+    width: 0;
+}
+#svg_60th div.bdR{
+    height:0;
+}
+#svg_60th div.bdL{
+    height:0;
+}
+
+/*背景色アニメーション*/
+
+/*#svg_60th.active {
+	background-color: #F00;
+	-webkit-transition: background-color 10s ease-in;
+}*/
+#svg_60th.active {
+	animation: bg-color 6s ease alternate forwards;
+	-webkit-animation:bg-color 6s ease 0s forwards;
+	-o-animation:bg-color 6s ease 0s forwards;	
+	animation:bg-color 6s ease 0s forwards;
+}
+	@keyframes bg-color {
+	  0% { background-color: #FFF; }
+	  100% { background-color: #CCC;}
+	}
+	@-webkit-keyframes bg-color {
+	  0% { background-color: #FFF; }
+	  100% { background-color: #CCC;}
+	}
+	@-moz-keyframes bg-color {
+	  0% { background-color: #FFF; }
+	  100% { background-color: #CCC;}
+	}
+	@-o-keyframes bg-color {
+	  0% { background-color: #FFF; }
+	  100% { background-color: #CCC;}
+	}
+	@-ms-keyframes bg-color {
+	  0% { background-color: #FFF; }
+	  100% { background-color: #CCC;}
+	}
+/*__________________________________________*/
+.clearfix:after {
+	display: block;
+	visibility: hidden;
+	content: ".";
+	clear: both;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+* html .clearfix {
+	zoom: 1;
+} /* IE6 */
+*:first-child+html .clearfix {
+	zoom: 1;
+} /* IE7 */
+
